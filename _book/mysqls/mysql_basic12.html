@@ -1,0 +1,676 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.mvcc · gitbook tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mysql_basic10.html" />
+    
+    
+    <link rel="prev" href="mysql_basic8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    第一章 mysql入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="mysql_basic1.html">
+            
+                <a href="mysql_basic1.html">
+            
+                    
+                    1.安装以及字段解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="mysql_basic2.html">
+            
+                <a href="mysql_basic2.html">
+            
+                    
+                    2.查询语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="mysql_basic5.html">
+            
+                <a href="mysql_basic5.html">
+            
+                    
+                    3.查询案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    第二章 mysql进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="mysql_basic4.html">
+            
+                <a href="mysql_basic4.html">
+            
+                    
+                    1.存储程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="mysql_basic3.html">
+            
+                <a href="mysql_basic3.html">
+            
+                    
+                    2.索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="mysql_basic7.html">
+            
+                <a href="mysql_basic7.html">
+            
+                    
+                    3.引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="mysql_basic9.html">
+            
+                <a href="mysql_basic9.html">
+            
+                    
+                    4.锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    第三章 mysql高级
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="mysql_basic8.html">
+            
+                <a href="mysql_basic8.html">
+            
+                    
+                    1.隔离级别和事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="mysql_basic12.html">
+            
+                <a href="mysql_basic12.html">
+            
+                    
+                    2.mvcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="mysql_basic10.html">
+            
+                <a href="mysql_basic10.html">
+            
+                    
+                    3.主从配置，集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="mysql_basic13.html">
+            
+                <a href="mysql_basic13.html">
+            
+                    
+                    4.扩展知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    第四章 学习参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="mysql_basic6.html">
+            
+                <a href="mysql_basic6.html">
+            
+                    
+                    1.学习重点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.mvcc</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="mvcc&#xFF08;&#x91CD;&#x70B9;&#xFF09;">mvcc&#xFF08;&#x91CD;&#x70B9;&#xFF09;</h2>
+<h4 id="&#x7B80;&#x4ECB;-mvcc-lbcc&#xFF08;&#x8BB0;&#x4F4F;&#xFF09;">&#x7B80;&#x4ECB; MVCC LBCC&#xFF08;&#x8BB0;&#x4F4F;&#xFF09;</h4>
+<p>MySQL InnoDB&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x5B9E;&#x73B0;&#x7684;&#x662F;&#x57FA;&#x4E8E;&#x591A;&#x7248;&#x672C;&#x7684;&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x534F;&#x8BAE;&#x2014;&#x2014;MVCC (Multi-Version Concurrency Control) (&#x6CE8;&#xFF1A;&#x4E0E;MVCC&#x76F8;&#x5BF9;&#x7684;&#xFF0C;&#x662F;&#x57FA;&#x4E8E;&#x9501;&#x7684;&#x5E76;&#x53D1;&#x63A7;&#x5236;&#xFF0C;Lock-Based Concurrency Control)&#x3002;MVCC&#x6700;&#x5927;&#x7684;&#x597D;&#x5904;&#xFF0C;&#x76F8;&#x4FE1;&#x4E5F;&#x662F;&#x8033;&#x719F;&#x80FD;&#x8BE6;&#xFF1A;&#x8BFB;&#x4E0D;&#x52A0;&#x9501;&#xFF0C;&#x8BFB;&#x5199;&#x4E0D;&#x51B2;&#x7A81;&#x3002;&#x5728;&#x8BFB;&#x591A;&#x5199;&#x5C11;&#x7684;OLTP&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x8BFB;&#x5199;&#x4E0D;&#x51B2;&#x7A81;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x589E;&#x52A0;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x5E76;&#x53D1;&#x6027;&#x80FD;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x73B0;&#x9636;&#x6BB5;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;RDBMS&#xFF0C;&#x90FD;&#x652F;&#x6301;&#x4E86;MVCC&#x3002;</p>
+<h4 id="snapshot-read-vs-current-read">Snapshot Read vs Current Read</h4>
+<ol>
+<li><p>&#x6982;&#x8FF0;</p>
+<p> &#x5728;MVCC&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x4E2D;&#xFF0C;&#x8BFB;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x4E24;&#x7C7B;&#xFF1A;&#x5FEB;&#x7167;&#x8BFB; (snapshot read)&#x4E0E;&#x5F53;&#x524D;&#x8BFB; (current read)&#x3002;&#x5FEB;&#x7167;&#x8BFB;&#xFF0C;&#x8BFB;&#x53D6;&#x7684;&#x662F;&#x8BB0;&#x5F55;&#x7684;&#x53EF;&#x89C1;&#x7248;&#x672C; (&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5386;&#x53F2;&#x7248;&#x672C;)&#xFF0C;&#x4E0D;&#x7528;&#x52A0;&#x9501;&#x3002;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x8BFB;&#x53D6;&#x7684;&#x662F;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x5F53;&#x524D;&#x8BFB;&#x8FD4;&#x56DE;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x4F1A;&#x52A0;&#x4E0A;&#x9501;&#xFF0C;&#x4FDD;&#x8BC1;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x4E0D;&#x4F1A;&#x518D;&#x5E76;&#x53D1;&#x4FEE;&#x6539;&#x8FD9;&#x6761;&#x8BB0;&#x5F55;&#x3002;</p>
+</li>
+<li><p>&#x5FEB;&#x7167;&#x8BFB; (snapshot read)</p>
+<p> &#x8BFB;&#x53D6;&#x7684;&#x662F;&#x8BB0;&#x5F55;&#x7684;&#x53EF;&#x89C1;&#x7248;&#x672C; (&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5386;&#x53F2;&#x7248;&#x672C;)&#xFF0C;&#x4E0D;&#x7528;&#x52A0;&#x9501;&#x3002;</p>
+<p> &#x7B80;&#x5355;&#x7684;select&#x64CD;&#x4F5C;&#xFF0C;&#x5C5E;&#x4E8E;&#x5FEB;&#x7167;&#x8BFB;&#xFF0C;&#x4E0D;&#x52A0;&#x9501;:</p>
+<pre><code> select * from table where ?;
+</code></pre></li>
+<li><p>&#x5F53;&#x524D;&#x8BFB; (current read)</p>
+<p> &#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x8BFB;&#x53D6;&#x7684;&#x662F;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x5F53;&#x524D;&#x8BFB;&#x8FD4;&#x56DE;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x4F1A;&#x52A0;&#x4E0A;&#x9501;&#xFF0C;&#x4FDD;&#x8BC1;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x4E0D;&#x4F1A;&#x518D;&#x5E76;&#x53D1;&#x4FEE;&#x6539;&#x8FD9;&#x6761;&#x8BB0;&#x5F55;&#x3002;</p>
+<p> &#x7279;&#x6B8A;&#x7684;&#x8BFB;&#x64CD;&#x4F5C;&#xFF0C;&#x63D2;&#x5165;/&#x66F4;&#x65B0;/&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x5C5E;&#x4E8E;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x9700;&#x8981;&#x52A0;&#x9501;&#x3002;</p>
+<pre><code>
+ select * from table where ? lock in share mode;
+ select * from table where ? for update;
+ insert into table values (&#x2026;);
+ update table set ? where ?;
+ delete from table where ?;
+</code></pre><blockquote>
+<p>&#x6240;&#x6709;&#x4EE5;&#x4E0A;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x90FD;&#x5C5E;&#x4E8E;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x8BFB;&#x53D6;&#x4E4B;&#x540E;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x5176;&#x4ED6;&#x5E76;&#x53D1;&#x4E8B;&#x52A1;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#xFF0C;&#x5BF9;&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;&#x52A0;&#x9501;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x7B2C;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x5BF9;&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;&#x52A0;S&#x9501; (&#x5171;&#x4EAB;&#x9501;)&#x5916;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x52A0;&#x7684;&#x662F;X&#x9501; (&#x6392;&#x5B83;&#x9501;)&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#x5C06; &#x63D2;&#x5165;/&#x66F4;&#x65B0;/&#x5220;&#x9664; &#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x5F52;&#x4E3A;&#x5F53;&#x524D;&#x8BFB;&#xFF1F;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A; &#x66F4;&#x65B0; &#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<p> <img src="pics/34.jpg" alt=""></p>
+<p> &#x4ECE;&#x56FE;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4E00;&#x4E2A;Update&#x64CD;&#x4F5C;&#x7684;&#x5177;&#x4F53;&#x6D41;&#x7A0B;&#x3002;&#x5F53;Update SQL&#x88AB;&#x53D1;&#x7ED9;MySQL&#x540E;&#xFF0C;MySQL Server&#x4F1A;&#x6839;&#x636E;where&#x6761;&#x4EF6;&#xFF0C;&#x8BFB;&#x53D6;&#x7B2C;&#x4E00;&#x6761;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x7136;&#x540E;InnoDB&#x5F15;&#x64CE;&#x4F1A;&#x5C06;&#x7B2C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x8FD4;&#x56DE;&#xFF0C;&#x5E76;&#x52A0;&#x9501; (current read)&#x3002;&#x5F85;MySQL Server&#x6536;&#x5230;&#x8FD9;&#x6761;&#x52A0;&#x9501;&#x7684;&#x8BB0;&#x5F55;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x518D;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;Update&#x8BF7;&#x6C42;&#xFF0C;&#x66F4;&#x65B0;&#x8FD9;&#x6761;&#x8BB0;&#x5F55;&#x3002;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#xFF0C;&#x518D;&#x8BFB;&#x53D6;&#x4E0B;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x76F4;&#x81F3;&#x6CA1;&#x6709;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E3A;&#x6B62;&#x3002;&#x56E0;&#x6B64;&#xFF0C;Update&#x64CD;&#x4F5C;&#x5185;&#x90E8;&#xFF0C;&#x5C31;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x8BFB;&#x3002;&#x540C;&#x7406;&#xFF0C;Delete&#x64CD;&#x4F5C;&#x4E5F;&#x4E00;&#x6837;&#x3002;Insert&#x64CD;&#x4F5C;&#x4F1A;&#x7A0D;&#x5FAE;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;Insert&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x4F1A;&#x89E6;&#x53D1;Unique Key&#x7684;&#x51B2;&#x7A81;&#x68C0;&#x67E5;&#xFF0C;&#x4E5F;&#x4F1A;&#x8FDB;&#x884C;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x8BFB;&#x3002;</p>
+</li>
+</ol>
+<h4 id="&#x5B9E;&#x9645;&#x5E94;&#x7528;">&#x5B9E;&#x9645;&#x5E94;&#x7528;</h4>
+<ol>
+<li><p>&#x95EE;&#x9898;:
+ &#x4E0B;&#x9762;&#x4E24;&#x6761;&#x7B80;&#x5355;&#x7684;SQL&#xFF0C;&#x4ED6;&#x4EEC;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#xFF1F;</p>
+<pre><code> select * from t1 where id = 10;
+ delete from t1 where id = 10;
+</code></pre><p> SQL1&#xFF1A;&#x4E0D;&#x52A0;&#x9501;&#x3002;&#x56E0;&#x4E3A;MySQL&#x662F;&#x4F7F;&#x7528;&#x591A;&#x7248;&#x672C;&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x7684;&#xFF0C;&#x8BFB;&#x4E0D;&#x52A0;&#x9501;&#x3002;
+ SQL2&#xFF1A;&#x5BF9;id = 10&#x7684;&#x8BB0;&#x5F55;&#x52A0;&#x5199;&#x9501; (&#x8D70;&#x4E3B;&#x952E;&#x7D22;&#x5F15;)&#x3002;</p>
+</li>
+<li><p>&#x95EE;&#x9898;&#x89E3;&#x91CA;:</p>
+<p> &#x8981;&#x56DE;&#x7B54;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7F3A;&#x5C11;&#x54EA;&#x4E9B;&#x524D;&#x63D0;&#x6761;&#x4EF6;</p>
+<ol>
+<li>id&#x5217;&#x662F;&#x4E0D;&#x662F;&#x4E3B;&#x952E;&#xFF1F;</li>
+<li>&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x7684;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</li>
+<li>id&#x5217;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x4E3B;&#x952E;&#xFF0C;&#x90A3;&#x4E48;id&#x5217;&#x4E0A;&#x6709;&#x7D22;&#x5F15;&#x5417;&#xFF1F;</li>
+<li>id&#x5217;&#x4E0A;&#x5982;&#x679C;&#x6709;&#x4E8C;&#x7EA7;&#x7D22;&#x5F15;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x7D22;&#x5F15;&#x662F;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#x5417;&#xFF1F;</li>
+<li><p>&#x4E24;&#x4E2A;SQL&#x7684;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x7D22;&#x5F15;&#x626B;&#x63CF;&#xFF1F;&#x5168;&#x8868;&#x626B;&#x63CF;&#xFF1F;</p>
+<p>&#x6CA1;&#x6709;&#x8FD9;&#x4E9B;&#x524D;&#x63D0;&#xFF0C;&#x76F4;&#x63A5;&#x5C31;&#x7ED9;&#x5B9A;&#x4E00;&#x6761;SQL&#xFF0C;&#x7136;&#x540E;&#x95EE;&#x8FD9;&#x4E2A;SQL&#x4F1A;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#xFF0C;&#x90FD;&#x662F;&#x5F88;&#x4E1A;&#x4F59;&#x7684;&#x8868;&#x73B0;&#x3002;&#x800C;&#x5F53;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x6709;&#x4E86;&#x660E;&#x786E;&#x7684;&#x7B54;&#x6848;&#x4E4B;&#x540E;&#xFF0C;&#x7ED9;&#x5B9A;&#x7684;SQL&#x4F1A;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#xFF0C;&#x4E5F;&#x5C31;&#x4E00;&#x76EE;&#x4E86;&#x7136;&#x3002;</p>
+</li>
+</ol>
+</li>
+<li><p>&#x95EE;&#x9898;&#x5206;&#x6790;:</p>
+<ol>
+<li>id&#x5217;&#x662F;&#x4E3B;&#x952E;&#xFF0C;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x662F;&#x4E8C;&#x7EA7;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x662F;&#x4E8C;&#x7EA7;&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x662F;&#x4E3B;&#x952E;&#xFF0C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x662F;&#x4E8C;&#x7EA7;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x662F;&#x4E8C;&#x7EA7;&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+<li>Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;</li>
+</ol>
+</li>
+</ol>
+<ol>
+<li><p>&#x7EC4;&#x5408;&#x8BA8;&#x8BBA;:</p>
+<ol>
+<li><p>&#x7EC4;&#x5408;&#x4E00;&#xFF1A;id&#x4E3B;&#x952E;+RC</p>
+<p> id&#x662F;&#x4E3B;&#x952E;&#xFF0C;Read Committed&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x7ED9;&#x5B9A;SQL&#xFF1A;delete from t1 where id = 10; &#x53EA;&#x9700;&#x8981;&#x5C06;&#x4E3B;&#x952E;&#x4E0A;&#xFF0C;id = 10&#x7684;&#x8BB0;&#x5F55;&#x52A0;&#x4E0A;X&#x9501;&#x5373;&#x53EF;&#x3002;</p>
+<p> <img src="pics/35.jpg" alt=""> </p>
+</li>
+<li><p>&#x7EC4;&#x5408;&#x4E8C;&#xFF1A;id&#x552F;&#x4E00;&#x7D22;&#x5F15;+RC</p>
+<p> &#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#xFF0C;id&#x4E0D;&#x662F;&#x4E3B;&#x952E;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;Unique&#x7684;&#x4E8C;&#x7EA7;&#x7D22;&#x5F15;&#x952E;&#x503C;&#x3002;&#x90A3;&#x4E48;&#x5728;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;delete from t1 where id = 10; &#x9700;&#x8981;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#x5462;&#xFF1F;&#x89C1;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p> <img src="pics/36.jpg" alt=""></p>
+<p> &#x6B64;&#x7EC4;&#x5408;&#x4E2D;&#xFF0C;id&#x662F;unique&#x7D22;&#x5F15;&#xFF0C;&#x800C;&#x4E3B;&#x952E;&#x662F;name&#x5217;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x52A0;&#x9501;&#x7684;&#x60C5;&#x51B5;&#x7531;&#x4E8E;&#x7EC4;&#x5408;&#x4E00;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x7531;&#x4E8E;id&#x662F;unique&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;delete&#x8BED;&#x53E5;&#x4F1A;&#x9009;&#x62E9;&#x8D70;id&#x5217;&#x7684;&#x7D22;&#x5F15;&#x8FDB;&#x884C;where&#x6761;&#x4EF6;&#x7684;&#x8FC7;&#x6EE4;&#xFF0C;&#x5728;&#x627E;&#x5230;id=10&#x7684;&#x8BB0;&#x5F55;&#x540E;&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x5C06;unique&#x7D22;&#x5F15;&#x4E0A;&#x7684;id=10&#x7D22;&#x5F15;&#x8BB0;&#x5F55;&#x52A0;&#x4E0A;X&#x9501;&#xFF0C;&#x540C;&#x65F6;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x8BFB;&#x53D6;&#x5230;&#x7684;name&#x5217;&#xFF0C;&#x56DE;&#x4E3B;&#x952E;&#x7D22;&#x5F15;(&#x805A;&#x7C07;&#x7D22;&#x5F15;)&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;name = &#x2018;d&#x2019; &#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x952E;&#x7D22;&#x5F15;&#x9879;&#x52A0;X&#x9501;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;&#x4E5F;&#x8981;&#x52A0;&#x9501;&#xFF1F;&#x8BD5;&#x60F3;&#x4E00;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x5E76;&#x53D1;&#x7684;&#x4E00;&#x4E2A;SQL&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x4E3B;&#x952E;&#x7D22;&#x5F15;&#x6765;&#x66F4;&#x65B0;&#xFF1A;update t1 set id = 100 where name = &#x2018;d&#x2019;; &#x6B64;&#x65F6;&#xFF0C;&#x5982;&#x679C;delete&#x8BED;&#x53E5;&#x6CA1;&#x6709;&#x5C06;&#x4E3B;&#x952E;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;&#x52A0;&#x9501;&#xFF0C;&#x90A3;&#x4E48;&#x5E76;&#x53D1;&#x7684;update&#x5C31;&#x4F1A;&#x611F;&#x77E5;&#x4E0D;&#x5230;delete&#x8BED;&#x53E5;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x8FDD;&#x80CC;&#x4E86;&#x540C;&#x4E00;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;&#x66F4;&#x65B0;/&#x5220;&#x9664;&#x9700;&#x8981;&#x4E32;&#x884C;&#x6267;&#x884C;&#x7684;&#x7EA6;&#x675F;&#x3002;</p>
+<p> &#x7ED3;&#x8BBA;&#xFF1A;&#x82E5;id&#x5217;&#x662F;unique&#x5217;&#xFF0C;&#x5176;&#x4E0A;&#x6709;unique&#x7D22;&#x5F15;&#x3002;&#x90A3;&#x4E48;SQL&#x9700;&#x8981;&#x52A0;&#x4E24;&#x4E2A;X&#x9501;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x4E8E;id unique&#x7D22;&#x5F15;&#x4E0A;&#x7684;id = 10&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x53E6;&#x4E00;&#x628A;&#x9501;&#x5BF9;&#x5E94;&#x4E8E;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;[name=&apos;d&apos;,id=10]&#x7684;&#x8BB0;&#x5F55;&#x3002;</p>
+</li>
+<li><p>&#x7EC4;&#x5408;&#x4E09;&#xFF1A;id&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;+RC</p>
+<p> &#x76F8;&#x5BF9;&#x4E8E;&#x7EC4;&#x5408;&#x4E00;&#x3001;&#x4E8C;&#xFF0C;&#x7EC4;&#x5408;&#x4E09;&#x53C8;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4ECD;&#x65E7;&#x662F;RC&#x4E0D;&#x53D8;&#xFF0C;&#x4F46;&#x662F;id&#x5217;&#x4E0A;&#x7684;&#x7EA6;&#x675F;&#x53C8;&#x964D;&#x4F4E;&#x4E86;&#xFF0C;id&#x5217;&#x4E0D;&#x518D;&#x552F;&#x4E00;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x5047;&#x8BBE;delete from t1 where id = 10; &#x8BED;&#x53E5;&#xFF0C;&#x4ECD;&#x65E7;&#x9009;&#x62E9;id&#x5217;&#x4E0A;&#x7684;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;where&#x6761;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x4F1A;&#x6301;&#x6709;&#x54EA;&#x4E9B;&#x9501;&#xFF1F;&#x540C;&#x6837;&#x89C1;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p> <img src="pics/37.jpg" alt=""></p>
+<p> &#x6839;&#x636E;&#x6B64;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x9996;&#x5148;&#xFF0C;id&#x5217;&#x7D22;&#x5F15;&#x4E0A;&#xFF0C;&#x6EE1;&#x8DB3;id = 10&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x5747;&#x5DF2;&#x52A0;&#x9501;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BB0;&#x5F55;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x952E;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;&#x4E5F;&#x90FD;&#x52A0;&#x4E0A;&#x4E86;&#x9501;&#x3002;&#x4E0E;&#x7EC4;&#x5408;&#x4E8C;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x7EC4;&#x5408;&#x4E8C;&#x6700;&#x591A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7B49;&#x503C;&#x67E5;&#x8BE2;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x800C;&#x7EC4;&#x5408;&#x4E09;&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x6EE1;&#x8DB3;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x90FD;&#x52A0;&#x9501;&#x3002;</p>
+<p> &#x7ED3;&#x8BBA;&#xFF1A;&#x82E5;id&#x5217;&#x4E0A;&#x6709;&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x7684;&#x6240;&#x6709;&#x6EE1;&#x8DB3;SQL&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x52A0;&#x9501;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BB0;&#x5F55;&#x5728;&#x4E3B;&#x952E;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4E5F;&#x4F1A;&#x88AB;&#x52A0;&#x9501;&#x3002;</p>
+</li>
+</ol>
+</li>
+</ol>
+<pre><code>4. &#x7EC4;&#x5408;&#x56DB;&#xFF1A;id&#x65E0;&#x7D22;&#x5F15;+RC
+
+    &#x76F8;&#x5BF9;&#x4E8E;&#x524D;&#x9762;&#x4E09;&#x4E2A;&#x7EC4;&#x5408;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x7684;&#x60C5;&#x51B5;&#x3002;id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;where id = 10;&#x8FD9;&#x4E2A;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x6CA1;&#x6CD5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x8D70;&#x5168;&#x8868;&#x626B;&#x63CF;&#x505A;&#x8FC7;&#x6EE4;&#x3002;&#x5BF9;&#x5E94;&#x4E8E;&#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#xFF0C;SQL&#x4F1A;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#xFF1F;&#x6216;&#x8005;&#x662F;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5168;&#x8868;&#x626B;&#x63CF;&#x65F6;&#xFF0C;&#x4F1A;&#x52A0;&#x4EC0;&#x4E48;&#x9501;&#xFF1F;&#x8FD9;&#x4E2A;&#x7B54;&#x6848;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#xFF1A;&#x6709;&#x4EBA;&#x8BF4;&#x4F1A;&#x5728;&#x8868;&#x4E0A;&#x52A0;X&#x9501;&#xFF1B;&#x6709;&#x4EBA;&#x8BF4;&#x4F1A;&#x5C06;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#xFF0C;&#x9009;&#x62E9;&#x51FA;&#x6765;&#x7684;id = 10;&#x7684;&#x8BB0;&#x5F55;&#x52A0;&#x4E0A;X&#x9501;&#x3002;&#x90A3;&#x4E48;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x5462;&#xFF1F;&#x8BF7;&#x770B;&#x4E0B;&#x56FE;&#xFF1A;
+    ![](pics/38.jpg)
+
+    &#x7531;&#x4E8E;id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x80FD;&#x8D70;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#xFF0C;&#x8FDB;&#x884C;&#x5168;&#x90E8;&#x626B;&#x63CF;&#x3002;&#x4ECE;&#x56FE;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6EE1;&#x8DB3;&#x5220;&#x9664;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x6709;&#x4E24;&#x6761;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x88AB;&#x52A0;&#x4E0A;&#x4E86;X&#x9501;&#x3002;&#x65E0;&#x8BBA;&#x8BB0;&#x5F55;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x5168;&#x90E8;&#x88AB;&#x52A0;&#x4E0A;X&#x9501;&#x3002;&#x65E2;&#x4E0D;&#x662F;&#x52A0;&#x8868;&#x9501;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x5728;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E0A;&#x52A0;&#x884C;&#x9501;&#x3002;
+
+
+
+    &#x6709;&#x4EBA;&#x53EF;&#x80FD;&#x4F1A;&#x95EE;&#xFF1F;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x662F;&#x53EA;&#x5728;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E0A;&#x52A0;&#x9501;&#x5462;&#xFF1F;&#x8FD9;&#x662F;&#x7531;&#x4E8E;MySQL&#x7684;&#x5B9E;&#x73B0;&#x51B3;&#x5B9A;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x5FEB;&#x901F;&#x8FC7;&#x6EE4;&#xFF0C;&#x90A3;&#x4E48;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x5C42;&#x9762;&#x5C31;&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#x52A0;&#x9501;&#x540E;&#x8FD4;&#x56DE;&#xFF0C;&#x7136;&#x540E;&#x7531;MySQL Server&#x5C42;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;&#x56E0;&#x6B64;&#x4E5F;&#x5C31;&#x628A;&#x6240;&#x6709;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x9501;&#x4E0A;&#x4E86;&#x3002;
+
+
+
+    &#x6CE8;&#xFF1A;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;MySQL&#x6709;&#x4E00;&#x4E9B;&#x6539;&#x8FDB;&#xFF0C;&#x5728;MySQL Server&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x53D1;&#x73B0;&#x4E0D;&#x6EE1;&#x8DB3;&#x540E;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;unlock_row&#x65B9;&#x6CD5;&#xFF0C;&#x628A;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x653E;&#x9501; (&#x8FDD;&#x80CC;&#x4E86;2PL&#x7684;&#x7EA6;&#x675F;)&#x3002;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x6700;&#x540E;&#x53EA;&#x4F1A;&#x6301;&#x6709;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;&#x9501;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x52A0;&#x9501;&#x64CD;&#x4F5C;&#x8FD8;&#x662F;&#x4E0D;&#x80FD;&#x7701;&#x7565;&#x7684;&#x3002;
+
+
+
+    &#x7ED3;&#x8BBA;&#xFF1A;&#x82E5;id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;SQL&#x4F1A;&#x8D70;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x7684;&#x5168;&#x626B;&#x63CF;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x7531;&#x4E8E;&#x8FC7;&#x6EE4;&#x662F;&#x7531;MySQL Server&#x5C42;&#x9762;&#x8FDB;&#x884C;&#x7684;&#x3002;&#x56E0;&#x6B64;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x52A0;&#x4E0A;X&#x9501;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4E3A;&#x4E86;&#x6548;&#x7387;&#x8003;&#x91CF;&#xFF0C;MySQL&#x505A;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4F1A;&#x5728;&#x5224;&#x65AD;&#x540E;&#x653E;&#x9501;&#xFF0C;&#x6700;&#x7EC8;&#x6301;&#x6709;&#x7684;&#xFF0C;&#x662F;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;&#x9501;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;&#x52A0;&#x9501;/&#x653E;&#x9501;&#x52A8;&#x4F5C;&#x4E0D;&#x4F1A;&#x7701;&#x7565;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x4F18;&#x5316;&#x4E5F;&#x8FDD;&#x80CC;&#x4E86;2PL&#x7684;&#x7EA6;&#x675F;&#x3002;
+
+
+5. id&#x4E3B;&#x952E;+RR
+
+    &#x4E0A;&#x9762;&#x7684;&#x56DB;&#x4E2A;&#x7EC4;&#x5408;&#xFF0C;&#x90FD;&#x662F;&#x5728;Read Committed&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#x7684;&#x52A0;&#x9501;&#x884C;&#x4E3A;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x56DB;&#x4E2A;&#x7EC4;&#x5408;&#xFF0C;&#x662F;&#x5728;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#x7684;&#x52A0;&#x9501;&#x884C;&#x4E3A;&#x3002;
+
+    &#x7EC4;&#x5408;&#x4E94;&#xFF0C;id&#x5217;&#x662F;&#x4E3B;&#x952E;&#x5217;&#xFF0C;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x9488;&#x5BF9;delete from t1 where id = 10; &#x8FD9;&#x6761;SQL&#xFF0C;&#x52A0;&#x9501;&#x4E0E;&#x7EC4;&#x5408;&#x4E00;&#xFF1A;[id&#x4E3B;&#x952E;&#xFF0C;Read Committed]&#x4E00;&#x81F4;&#x3002;
+
+
+6. &#x7EC4;&#x5408;&#x516D;&#xFF1A;id&#x552F;&#x4E00;&#x7D22;&#x5F15;+RR
+
+    &#x4E0E;&#x7EC4;&#x5408;&#x4E94;&#x7C7B;&#x4F3C;&#xFF0C;&#x7EC4;&#x5408;&#x516D;&#x7684;&#x52A0;&#x9501;&#xFF0C;&#x4E0E;&#x7EC4;&#x5408;&#x4E8C;&#xFF1A;[id&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;Read Committed]&#x4E00;&#x81F4;&#x3002;&#x4E24;&#x4E2A;X&#x9501;&#xFF0C;id&#x552F;&#x4E00;&#x7D22;&#x5F15;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x4E0A;&#x4E00;&#x4E2A;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x3002;
+
+
+7. id&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;+RR
+
+    RC&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x5141;&#x8BB8;&#x5E7B;&#x8BFB;&#xFF0C;&#x800C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x5B58;&#x5728;&#x5E7B;&#x8BFB;&#x3002;&#x4F46;&#x662F;&#x5728;&#x7EC4;&#x5408;&#x4E94;&#x3001;&#x7EC4;&#x5408;&#x516D;&#x4E2D;&#xFF0C;&#x52A0;&#x9501;&#x884C;&#x4E3A;&#x53C8;&#x662F;&#x4E0E;RC&#x4E0B;&#x7684;&#x52A0;&#x9501;&#x884C;&#x4E3A;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x3002;&#x90A3;&#x4E48;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;&#x5982;&#x4F55;&#x9632;&#x6B62;&#x5E7B;&#x8BFB;&#x5462;&#xFF1F;
+
+    &#x7EC4;&#x5408;&#x4E03;&#xFF0C;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;id&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;&#x6267;&#x884C;delete from t1 where id = 10; &#x5047;&#x8BBE;&#x9009;&#x62E9;id&#x5217;&#x4E0A;&#x7684;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x6761;&#x4EF6;&#x8FC7;&#x6EE4;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x52A0;&#x9501;&#x884C;&#x4E3A;&#xFF0C;&#x662F;&#x600E;&#x4E48;&#x6837;&#x7684;&#x5462;&#xFF1F;&#x540C;&#x6837;&#x770B;&#x4E0B;&#x9762;&#x8FD9;&#x5E45;&#x56FE;&#xFF1A;
+
+    ![](pics/39.jpg)
+
+
+    &#x6B64;&#x56FE;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x7EC4;&#x5408;&#x4E09;&#xFF1A;[id&#x5217;&#x4E0A;&#x975E;&#x552F;&#x4E00;&#x9501;&#xFF0C;Read Committed]&#x770B;&#x4F3C;&#x76F8;&#x540C;&#xFF0C;&#x5176;&#x5B9E;&#x5374;&#x6709;&#x5F88;&#x5927;&#x7684;&#x533A;&#x522B;&#x3002;&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x8FD9;&#x5E45;&#x56FE;&#x4E2D;&#x591A;&#x4E86;&#x4E00;&#x4E2A;GAP&#x9501;&#xFF0C;&#x800C;&#x4E14;GAP&#x9501;&#x770B;&#x8D77;&#x6765;&#x4E5F;&#x4E0D;&#x662F;&#x52A0;&#x5728;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;&#xFF0C;&#x5012;&#x50CF;&#x662F;&#x52A0;&#x8F7D;&#x4E24;&#x6761;&#x8BB0;&#x5F55;&#x4E4B;&#x95F4;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;GAP&#x9501;&#x6709;&#x4F55;&#x7528;&#xFF1F;
+
+
+
+    &#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x591A;&#x51FA;&#x6765;&#x7684;GAP&#x9501;&#xFF0C;&#x5C31;&#x662F;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;RC&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5E7B;&#x8BFB;&#x7684;&#x5173;&#x952E;&#x3002;&#x786E;&#x5B9E;&#xFF0C;GAP&#x9501;&#x9501;&#x4F4F;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x8BB0;&#x5F55;&#x672C;&#x8EAB;&#xFF0C;&#x800C;&#x662F;&#x4E24;&#x6761;&#x8BB0;&#x5F55;&#x4E4B;&#x95F4;&#x7684;GAP&#x3002;&#x6240;&#x8C13;&#x5E7B;&#x8BFB;&#xFF0C;&#x5C31;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#xFF0C;&#x8FDE;&#x7EED;&#x505A;&#x4E24;&#x6B21;&#x5F53;&#x524D;&#x8BFB; (&#x4F8B;&#x5982;&#xFF1A;select * from t1 where id = 10 for update;)&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x8BB0;&#x5F55; (&#x8BB0;&#x5F55;&#x6570;&#x91CF;&#x4E00;&#x81F4;&#xFF0C;&#x8BB0;&#x5F55;&#x672C;&#x8EAB;&#x4E5F;&#x4E00;&#x81F4;)&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x7684;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x4E0D;&#x4F1A;&#x6BD4;&#x7B2C;&#x4E00;&#x6B21;&#x8FD4;&#x56DE;&#x66F4;&#x591A;&#x7684;&#x8BB0;&#x5F55; (&#x5E7B;&#x8C61;)&#x3002;
+
+
+
+    &#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x4E24;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#x8FD4;&#x56DE;&#x4E00;&#x81F4;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90A3;&#x5C31;&#x9700;&#x8981;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#x4E0E;&#x7B2C;&#x4E8C;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#x4E4B;&#x95F4;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x4E8B;&#x52A1;&#x4E0D;&#x4F1A;&#x63D2;&#x5165;&#x65B0;&#x7684;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x5E76;&#x63D0;&#x4EA4;&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;GAP&#x9501;&#x5E94;&#x8FD0;&#x800C;&#x751F;&#x3002;
+
+
+
+    &#x5982;&#x56FE;&#x4E2D;&#x6240;&#x793A;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x65B0;&#x7684;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x9879; (id = 10)&#xFF0C;&#x8003;&#x8651;&#x5230;B+&#x6811;&#x7D22;&#x5F15;&#x7684;&#x6709;&#x5E8F;&#x6027;&#xFF0C;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x4E00;&#x5B9A;&#x662F;&#x8FDE;&#x7EED;&#x5B58;&#x653E;&#x7684;&#x3002;&#x8BB0;&#x5F55;[6,c]&#x4E4B;&#x524D;&#xFF0C;&#x4E0D;&#x4F1A;&#x63D2;&#x5165;id=10&#x7684;&#x8BB0;&#x5F55;&#xFF1B;[6,c]&#x4E0E;[10,b]&#x95F4;&#x53EF;&#x4EE5;&#x63D2;&#x5165;[10, aa]&#xFF1B;[10,b]&#x4E0E;[10,d]&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x65B0;&#x7684;[10,bb],[10,c]&#x7B49;&#xFF1B;[10,d]&#x4E0E;[11,f]&#x95F4;&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;[10,e],[10,z]&#x7B49;&#xFF1B;&#x800C;[11,f]&#x4E4B;&#x540E;&#x4E5F;&#x4E0D;&#x4F1A;&#x63D2;&#x5165;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;[6,c]&#x4E0E;[10,b]&#x95F4;&#xFF0C;[10,b]&#x4E0E;[10,d]&#x95F4;&#xFF0C;[10,d]&#x4E0E;[11,f]&#x4E0D;&#x4F1A;&#x63D2;&#x5165;&#x65B0;&#x7684;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;MySQL&#x9009;&#x62E9;&#x4E86;&#x7528;GAP&#x9501;&#xFF0C;&#x5C06;&#x8FD9;&#x4E09;&#x4E2A;GAP&#x7ED9;&#x9501;&#x8D77;&#x6765;&#x3002;
+
+
+
+    Insert&#x64CD;&#x4F5C;&#xFF0C;&#x5982;insert [10,aa]&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x5B9A;&#x4F4D;&#x5230;[6,c]&#x4E0E;[10,b]&#x95F4;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x63D2;&#x5165;&#x524D;&#xFF0C;&#x4F1A;&#x68C0;&#x67E5;&#x8FD9;&#x4E2A;GAP&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x9501;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x88AB;&#x9501;&#x4E0A;&#xFF0C;&#x5219;Insert&#x4E0D;&#x80FD;&#x63D2;&#x5165;&#x8BB0;&#x5F55;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x901A;&#x8FC7;&#x7B2C;&#x4E00;&#x904D;&#x7684;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x4E0D;&#x4EC5;&#x5C06;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#x9501;&#x4E0A; (X&#x9501;)&#xFF0C;&#x4E0E;&#x7EC4;&#x5408;&#x4E09;&#x7C7B;&#x4F3C;&#x3002;&#x540C;&#x65F6;&#x8FD8;&#x662F;&#x589E;&#x52A0;3&#x628A;GAP&#x9501;&#xFF0C;&#x5C06;&#x53EF;&#x80FD;&#x63D2;&#x5165;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x8BB0;&#x5F55;&#x7684;3&#x4E2A;GAP&#x7ED9;&#x9501;&#x4E0A;&#xFF0C;&#x4FDD;&#x8BC1;&#x540E;&#x7EED;&#x7684;Insert&#x4E0D;&#x80FD;&#x63D2;&#x5165;&#x65B0;&#x7684;id=10&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x675C;&#x7EDD;&#x4E86;&#x540C;&#x4E00;&#x4E8B;&#x52A1;&#x7684;&#x7B2C;&#x4E8C;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x51FA;&#x73B0;&#x5E7B;&#x8C61;&#x7684;&#x60C5;&#x51B5;&#x3002;
+
+
+
+    &#x6709;&#x5FC3;&#x7684;&#x670B;&#x53CB;&#x770B;&#x5230;&#x8FD9;&#x513F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F1A;&#x95EE;&#xFF1A;&#x65E2;&#x7136;&#x9632;&#x6B62;&#x5E7B;&#x8BFB;&#xFF0C;&#x9700;&#x8981;&#x9760;GAP&#x9501;&#x7684;&#x4FDD;&#x62A4;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x7EC4;&#x5408;&#x4E94;&#x3001;&#x7EC4;&#x5408;&#x516D;&#xFF0C;&#x4E5F;&#x662F;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x5374;&#x4E0D;&#x9700;&#x8981;&#x52A0;GAP&#x9501;&#x5462;&#xFF1F;
+
+    &#x9996;&#x5148;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x95EE;&#x9898;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x56DE;&#x7B54;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#x3002;GAP&#x9501;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x540C;&#x4E00;&#x4E8B;&#x52A1;&#x7684;&#x4E24;&#x6B21;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x51FA;&#x73B0;&#x5E7B;&#x8BFB;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x800C;&#x7EC4;&#x5408;&#x4E94;&#xFF0C;id&#x662F;&#x4E3B;&#x952E;&#xFF1B;&#x7EC4;&#x5408;&#x516D;&#xFF0C;id&#x662F;unique&#x952E;&#xFF0C;&#x90FD;&#x80FD;&#x591F;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;&#x6027;&#x3002;&#x4E00;&#x4E2A;&#x7B49;&#x503C;&#x67E5;&#x8BE2;&#xFF0C;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x800C;&#x4E14;&#x65B0;&#x7684;&#x76F8;&#x540C;&#x53D6;&#x503C;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4E00;&#x5B9A;&#x4E0D;&#x4F1A;&#x5728;&#x65B0;&#x63D2;&#x5165;&#x8FDB;&#x6765;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x5C31;&#x907F;&#x514D;&#x4E86;GAP&#x9501;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x5176;&#x5B9E;&#xFF0C;&#x9488;&#x5BF9;&#x6B64;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x5982;&#x679C;&#x7EC4;&#x5408;&#x4E94;&#x3001;&#x7EC4;&#x5408;&#x516D;&#x4E0B;&#xFF0C;&#x9488;&#x5BF9;SQL&#xFF1A;select * from t1 where id = 10 for update; &#x7B2C;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#xFF0C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6EE1;&#x8DB3;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x90A3;&#x4E48;GAP&#x9501;&#x662F;&#x5426;&#x8FD8;&#x80FD;&#x591F;&#x7701;&#x7565;&#xFF1F;&#x6B64;&#x95EE;&#x9898;&#x7559;&#x7ED9;&#x5927;&#x5BB6;&#x601D;&#x8003;&#x3002;
+
+
+    &#x7ED3;&#x8BBA;&#xFF1A;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;id&#x5217;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x552F;&#x4E00;&#x7D22;&#x5F15;&#xFF0C;&#x5BF9;&#x5E94;SQL&#xFF1A;delete from t1 where id = 10; &#x9996;&#x5148;&#xFF0C;&#x901A;&#x8FC7;id&#x7D22;&#x5F15;&#x5B9A;&#x4F4D;&#x5230;&#x7B2C;&#x4E00;&#x6761;&#x6EE1;&#x8DB3;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x52A0;&#x8BB0;&#x5F55;&#x4E0A;&#x7684;X&#x9501;&#xFF0C;&#x52A0;GAP&#x4E0A;&#x7684;GAP&#x9501;&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x4E3B;&#x952E;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x8BB0;&#x5F55;X&#x9501;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#xFF1B;&#x7136;&#x540E;&#x8BFB;&#x53D6;&#x4E0B;&#x4E00;&#x6761;&#xFF0C;&#x91CD;&#x590D;&#x8FDB;&#x884C;&#x3002;&#x76F4;&#x81F3;&#x8FDB;&#x884C;&#x5230;&#x7B2C;&#x4E00;&#x6761;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;[11,f]&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8BB0;&#x5F55;X&#x9501;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x65E7;&#x9700;&#x8981;&#x52A0;GAP&#x9501;&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x7ED3;&#x675F;&#x3002;
+
+
+8. id&#x65E0;&#x7D22;&#x5F15;+RR
+
+    &#x7EC4;&#x5408;&#x516B;&#xFF0C;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#x7684;&#x6700;&#x540E;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;id&#x5217;&#x4E0A;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#x3002;&#x6B64;&#x65F6;SQL&#xFF1A;delete from t1 where id = 10; &#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#xFF0C;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x5168;&#x8868;&#x626B;&#x63CF;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x52A0;&#x9501;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;
+
+    ![](pics/40.jpg)
+
+
+    &#x5982;&#x56FE;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x6050;&#x6016;&#x7684;&#x73B0;&#x8C61;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#xFF0C;&#x90FD;&#x88AB;&#x52A0;&#x4E0A;&#x4E86;X&#x9501;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x95F4;&#x7684;&#x95F4;&#x9699;(GAP)&#xFF0C;&#x4E5F;&#x540C;&#x65F6;&#x88AB;&#x52A0;&#x4E0A;&#x4E86;GAP&#x9501;&#x3002;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x8868;&#xFF0C;&#x53EA;&#x6709;6&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x4E00;&#x5171;&#x9700;&#x8981;6&#x4E2A;&#x8BB0;&#x5F55;&#x9501;&#xFF0C;7&#x4E2A;GAP&#x9501;&#x3002;&#x8BD5;&#x60F3;&#xFF0C;&#x5982;&#x679C;&#x8868;&#x4E0A;&#x6709;1000&#x4E07;&#x6761;&#x8BB0;&#x5F55;&#x5462;&#xFF1F;
+
+    &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x4E0A;&#xFF0C;&#x9664;&#x4E86;&#x4E0D;&#x52A0;&#x9501;&#x7684;&#x5FEB;&#x7167;&#x5EA6;&#xFF0C;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x52A0;&#x9501;&#x7684;&#x5E76;&#x53D1;SQL&#xFF0C;&#x5747;&#x4E0D;&#x80FD;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x80FD;&#x66F4;&#x65B0;&#xFF0C;&#x4E0D;&#x80FD;&#x5220;&#x9664;&#xFF0C;&#x4E0D;&#x80FD;&#x63D2;&#x5165;&#xFF0C;&#x5168;&#x8868;&#x88AB;&#x9501;&#x6B7B;&#x3002;
+
+    &#x5F53;&#x7136;&#xFF0C;&#x8DDF;&#x7EC4;&#x5408;&#x56DB;&#xFF1A;[id&#x65E0;&#x7D22;&#x5F15;, Read Committed]&#x7C7B;&#x4F3C;&#xFF0C;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;MySQL&#x4E5F;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x4F18;&#x5316;&#xFF0C;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;semi-consistent read&#x3002;semi-consistent read&#x5F00;&#x542F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x6EE1;&#x8DB3;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;MySQL&#x4F1A;&#x63D0;&#x524D;&#x653E;&#x9501;&#x3002;&#x9488;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x7528;&#x4F8B;&#xFF0C;&#x5C31;&#x662F;&#x9664;&#x4E86;&#x8BB0;&#x5F55;[d,10]&#xFF0C;[g,10]&#x4E4B;&#x5916;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BB0;&#x5F55;&#x9501;&#x90FD;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x540C;&#x65F6;&#x4E0D;&#x52A0;GAP&#x9501;&#x3002;semi-consistent read&#x5982;&#x4F55;&#x89E6;&#x53D1;&#xFF1A;&#x8981;&#x4E48;&#x662F;read committed&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF1B;&#x8981;&#x4E48;&#x662F;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;innodb_locks_unsafe_for_binlog &#x53C2;&#x6570;&#x3002;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5173;&#x4E8E;semi-consistent read&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x53EF;&#x53C2;&#x8003;&#x6211;&#x4E4B;&#x524D;&#x7684;&#x4E00;&#x7BC7;&#x535A;&#x5BA2;&#xFF1A;MySQL+InnoDB semi-consitent read&#x539F;&#x7406;&#x53CA;&#x5B9E;&#x73B0;&#x5206;&#x6790; &#x3002;
+
+    &#x7ED3;&#x8BBA;&#xFF1A;&#x5728;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x8FDB;&#x884C;&#x5168;&#x8868;&#x626B;&#x63CF;&#x7684;&#x5F53;&#x524D;&#x8BFB;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x9501;&#x4E0A;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#xFF0C;&#x540C;&#x65F6;&#x4F1A;&#x9501;&#x4E0A;&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x5185;&#x7684;&#x6240;&#x6709;GAP&#xFF0C;&#x675C;&#x7EDD;&#x6240;&#x6709;&#x7684;&#x5E76;&#x53D1; &#x66F4;&#x65B0;/&#x5220;&#x9664;/&#x63D2;&#x5165; &#x64CD;&#x4F5C;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x89E6;&#x53D1;semi-consistent read&#xFF0C;&#x6765;&#x7F13;&#x89E3;&#x52A0;&#x9501;&#x5F00;&#x9500;&#x4E0E;&#x5E76;&#x53D1;&#x5F71;&#x54CD;&#xFF0C;&#x4F46;&#x662F;semi-consistent read&#x672C;&#x8EAB;&#x4E5F;&#x4F1A;&#x5E26;&#x6765;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x3002;
+
+
+9. Serializable
+
+    &#x9488;&#x5BF9;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x7B80;&#x5355;&#x7684;SQL&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x60C5;&#x51B5;&#xFF1A;Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x3002;&#x5BF9;&#x4E8E;SQL2&#xFF1A;delete from t1 where id = 10; &#x6765;&#x8BF4;&#xFF0C;Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0E;Repeatable Read&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x505A;&#x4ECB;&#x7ECD;&#x3002;
+
+    Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x5F71;&#x54CD;&#x7684;&#x662F;SQL1&#xFF1A;select * from t1 where id = 10; &#x8FD9;&#x6761;SQL&#xFF0C;&#x5728;RC&#xFF0C;RR&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;&#x90FD;&#x662F;&#x5FEB;&#x7167;&#x8BFB;&#xFF0C;&#x4E0D;&#x52A0;&#x9501;&#x3002;&#x4F46;&#x662F;&#x5728;Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;SQL1&#x4F1A;&#x52A0;&#x8BFB;&#x9501;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5FEB;&#x7167;&#x8BFB;&#x4E0D;&#x590D;&#x5B58;&#x5728;&#xFF0C;MVCC&#x5E76;&#x53D1;&#x63A7;&#x5236;&#x964D;&#x7EA7;&#x4E3A;Lock-Based CC&#x3002;
+
+    &#x7ED3;&#x8BBA;&#xFF1A;&#x5728;MySQL/InnoDB&#x4E2D;&#xFF0C;&#x6240;&#x8C13;&#x7684;&#x8BFB;&#x4E0D;&#x52A0;&#x9501;&#xFF0C;&#x5E76;&#x4E0D;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x800C;&#x662F;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x76F8;&#x5173;&#x7684;&#x3002;Serializable&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x8BFB;&#x4E0D;&#x52A0;&#x9501;&#x5C31;&#x4E0D;&#x518D;&#x6210;&#x7ACB;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BFB;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x662F;&#x5F53;&#x524D;&#x8BFB;&#x3002;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql_basic8.html" class="navigation navigation-prev " aria-label="Previous page: 1.隔离级别和事务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mysql_basic10.html" class="navigation navigation-next " aria-label="Next page: 3.主从配置，集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.mvcc","level":"2.3.2","depth":2,"next":{"title":"3.主从配置，集群","level":"2.3.3","depth":2,"path":"mysqls/mysql_basic10.md","ref":"mysqls/mysql_basic10.md","articles":[]},"previous":{"title":"1.隔离级别和事务","level":"2.3.1","depth":2,"path":"mysqls/mysql_basic8.md","ref":"mysqls/mysql_basic8.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","advanced-emoji","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"gitbook tutorial","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"本书主要是把mysql所有知识总结，形成一个自己的基础知识库，不可转载"},"file":{"path":"mysqls/mysql_basic12.md","mtime":"2019-11-15T08:01:14.462Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-15T08:29:46.106Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
